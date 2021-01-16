@@ -1,8 +1,9 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/cases">Case</router-link> |
+      <router-link to="/skins">Skins</router-link> |
+      <router-link to="/templates">Templates</router-link>
     </div>
     <router-view />
   </div>
@@ -28,5 +29,8 @@
       color: #42b983;
     }
   }
+}
+.txt-area {
+  width: 400px;
 }
 </style>
