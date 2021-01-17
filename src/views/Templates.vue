@@ -83,9 +83,9 @@ export default {
   },
   methods: {
     ...mapMutations(['updateItems']),
-    update(evt) {
+    update(evt, key) {
       console.log(evt)
-      this.updateItems({ ...this.templateItems, skinTitle: evt.target.value })
+      this.updateItems({ ...this.templateItems, [key]: evt.target.value })
     },
   },
 }
